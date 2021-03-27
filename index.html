@@ -5,21 +5,24 @@
   <title>The Gallery of Horns</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <template id="horns-template" type="x-tmpl-mustache">
+    <h2>{{title}}</h2>
+    <img src="{{image_url}}" alt="">
+    <p>{{description}}</p>
+  </template>
 </head>
 
 <body>
   <header>
     <h1>The Gallery of Horns</h1>
+    <button id="one">Page One</button>
+    <button id="two">Page Two</button>
     <select>
       <option value="default">Filter by Keyword</option>
     </select>
   </header>
   <main>
-    <template id="photo-template">
-      <h2></h2>
-      <img src="" alt="">
-      <p></p>
-    </template>
+    <section id="horns"></section>
   </main>
   <footer>
     &copy; By: Osama Noufal
